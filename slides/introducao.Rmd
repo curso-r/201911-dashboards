@@ -19,6 +19,17 @@ options(htmltools.dir.version = FALSE)
 
 class: middle, center
 
+## Material do curso
+
+### Completo (para a primeira aula e final do curso)
+# [shorturl.at/lnGJY](https://shorturl.at/lnGJY)
+
+### Arquivos extras nas demais aulas
+# [shorturl.at/zHPS7](https://shorturl.at/zHPS7)
+
+---
+class: middle, center
+
 # Sobre a Curso-R
 
 ---
