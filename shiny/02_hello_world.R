@@ -1,24 +1,20 @@
 library(shiny)
 
 ui <- fluidPage(
-  h1("Normal Distribution Histogram"),
-  
-  sliderInput(inputId = "num", label = "Sample size: ", min = 1, max = 100, value = 50),
-  textInput("title", label = "Insert Histogram Title: "),
-  hr(),
-  plotOutput("hist"),
-  verbatimTextOutput("summary")
+  "Hello World!",
+  sliderInput(
+    inputId = "num", 
+    label = "Tamanho da amostra: ", 
+    min = 1,
+    max = 100,
+    value = 30
+  ),
+  textInput("title", label = "Título do histograma: "),
+  plotOutput(outputId = "hist")
 )
 
 server <- function(input, output, session) {
   
-  output$hist <- renderPlot({
-    hist(rnorm(input$num), main = input$title)   
-  })
-  
-  output$summary <- renderPrint({
-    summary(rnorm(input$num))
-  })
 }
 
 shinyApp(ui, server)

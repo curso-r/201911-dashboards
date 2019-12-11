@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     storyboard: true
+    css: styles.css
 ---
 
 ```{r setup, include=FALSE}

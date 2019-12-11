@@ -17,7 +17,7 @@ library(tidyverse)
 pkmn <- read_rds("../dados/pkmn.rds")
 ```
 
-Row {data-height=100}
+Row {data-height=33%}
 -----------------------------------------------------------------------
 
 ### Poder de ataque
@@ -37,7 +37,7 @@ pkmn %>%
   theme_minimal()
 ```
 
-Row {data-height=200 .tabset}
+Row {data-height=67% .tabset}
 -----------------------------------------------------------------------
 
 ### Tipo dragão
@@ -88,6 +88,32 @@ pkmn %>%
   ) %>% 
   ggplot(aes(x = atributo, y = valor)) + 
   geom_boxplot(fill = cores["lutador"]) + 
+  labs(x = "Atributo", y = "Valor") +
+  theme_minimal()
+```
+
+### Tipo fogo
+
+```{r, fig.height=4, fig.width=7}
+pkmn %>%
+  filter(tipo_1 == "fogo", !is.na(id_geracao)) %>% 
+  mutate(
+    geracao = paste("Geração ", id_geracao)
+  ) %>%
+  ggplot(aes(x = geracao)) + 
+  geom_bar(fill = cores["fogo"]) + 
+  labs(x = "", y = "Número de pokémon") +
+  theme_minimal()
+
+pkmn %>%
+  filter(tipo_1 == "fogo") %>% 
+  gather(atributo, valor, 
+         hp, ataque, defesa, velocidade, ataque_especial, defesa_especial) %>%
+  mutate(
+    atributo = str_replace(atributo, "_", " ")
+  ) %>% 
+  ggplot(aes(x = atributo, y = valor)) + 
+  geom_boxplot(fill = cores["fogo"]) + 
   labs(x = "Atributo", y = "Valor") +
   theme_minimal()
 ```
