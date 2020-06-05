@@ -267,7 +267,7 @@ hist(rnorm(input$num))
 
 Dentro da função `server`,
 
-1) salve o output usando **`output$hist <- `render*()`**
+1) salve o output usando **`output$hist <- render*()`**
 
 2) alimente o output **`render*()`** com código
 
@@ -281,6 +281,7 @@ output$hist <- renderPlot({
   hist(rnorm(input$num))    
 })
 ```
+
 
 ---
 
