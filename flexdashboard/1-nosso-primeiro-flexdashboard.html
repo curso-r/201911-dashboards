@@ -819,15 +819,6 @@ body {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 768px) {
-html, body {
-  height: 100%;
-}
-
-#dashboard-container {
-  height: 100%;
-}
-}
 </style>
 
 
@@ -2632,7 +2623,7 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="column" class="section level2" data-width="550">
+<div id="column" class="section level2" data-width="60%">
 <h2>Column</h2>
 <div id="uma-tabela" class="section level3">
 <h3>Uma tabela</h3>
@@ -2871,7 +2862,7 @@ window.FlexDashboardComponents.push({
 </table>
 </div>
 </div>
-<div id="column-1" class="section level2" data-width="450">
+<div id="column-1" class="section level2" data-width="40%">
 <h2>Column</h2>
 <div id="um-gráfico" class="section level3">
 <h3>Um gráfico</h3>
@@ -2917,7 +2908,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   FlexDashboard.init({
     theme: "cosmo",
-    fillPage: true,
+    fillPage: false,
     orientation: "columns",
     storyboard: false,
     defaultFigWidth: 576,

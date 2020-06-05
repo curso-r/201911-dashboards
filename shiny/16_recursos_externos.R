@@ -30,7 +30,6 @@ ui <- dashboardPage(
         box(
           width = 12,
           img(src = "curso_r_logo.png", height = 50),
-          valueBoxOutput("meu_vb"),
           sliderInput(
             inputId = "num",
             label = "Tamanho da amostra: ",
@@ -38,7 +37,8 @@ ui <- dashboardPage(
             max = 100,
             value = 20,
           )
-        )
+        ),
+        valueBoxOutput("meu_vb")
       )
     )
   )
@@ -47,7 +47,11 @@ ui <- dashboardPage(
 server <- function(input, output, session) {
   output$meu_vb <- renderValueBox({
     
+<<<<<<< HEAD
     cor <- if_else(input$num > 50, "green", "red")
+=======
+    cor <- ifelse(input$num > 50, "green", "red")
+>>>>>>> f3a8174acefbd71ae830a36a5cee0fe117d4f439
     
     valueBox(
       value = input$num, 

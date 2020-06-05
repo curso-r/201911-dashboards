@@ -3,7 +3,7 @@ title: "Nosso primeiro flexdashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
-    vertical_layout: fill
+    vertical_layout: scroll
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +11,7 @@ library(flexdashboard)
 library(tidyverse)
 ```
 
-Column {data-width=550}
+Column {data-width=60%}
 -----------------------------------------------------------------------
 
 ### Uma tabela
@@ -22,7 +22,7 @@ mtcars %>%
   knitr::kable()
 ```
 
-Column {data-width=450}
+Column {data-width=40%}
 -----------------------------------------------------------------------
 
 ### Um gráfico

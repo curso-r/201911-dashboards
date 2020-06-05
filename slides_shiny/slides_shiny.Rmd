@@ -799,6 +799,18 @@ Replique o layout da aba "Descriptive" [desse dashboard (click aqui!)](https://r
 
 ---
 
+## Deploy
+
+- [shinyapps.io](https://www.shinyapps.io/) `r emo::ji("wave")` `r emo::ji("lollipop")` `r emo::ji("baby")`
+
+- [Shiny Server](https://rstudio.com/products/shiny/shiny-server/) `r emo::ji("woman_mechanic")`
+
+- [Serviços de nuvem (Google Cloud Plataform)](https://www.curso-r.com/blog/2019-09-06-app-deploy/) `r emo::ji("money_with_wings")` `r emo::ji("woman_technologist")`
+
+- [RStudio Connect](https://rstudio.com/products/connect/) `r emo::ji("money_with_wings")` `r emo::ji("money_with_wings")` `r emo::ji("money_with_wings")` `r emo::ji("money_with_wings")` `r emo::ji("money_with_wings")`
+
+---
+
 ## Referência
 
 Esse curso foi baseado no [Garrett Grolemund's Shiny Tutorial](https://shiny.rstudio.com/tutorial/).

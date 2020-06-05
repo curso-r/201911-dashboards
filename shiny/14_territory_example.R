@@ -15,10 +15,7 @@ server <- function(input, output, session) {
   territory <- reactive({
     filter(sales, TERRITORY == input$territory)
   })
-  
   observeEvent(territory(), {
-    
-    browser()
     choices <- unique(territory()$CUSTOMERNAME)
     updateSelectInput(session, "customername", choices = choices) 
   })
