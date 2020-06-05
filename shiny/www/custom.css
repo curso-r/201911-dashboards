@@ -1,0 +1,16 @@
+.skin-blue .main-header .navbar {
+    background-color: #449900;
+}
+
+.info-box {
+  min-height: 45px;
+} 
+
+.info-box-icon {
+  height: 45px; 
+  line-height: 45px;
+} 
+
+.info-box-content {
+  padding-top: 0px; padding-bottom: 0px;
+}
